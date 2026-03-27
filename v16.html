@@ -1308,13 +1308,13 @@ function arSim(ref,got){
 /* ══ UNIT 1 — KELUARGA BENTUK 1: ا · ب ت ث · ج ح خ · د ذ · ر ز ══ */
 function u1s1(){return[
   qi('ا',['Alif — garis lurus tegak','Ba — perahu + titik bawah','Ra — kail pancing','Waw — kepala melingkar'],0,'ا = Alif — huruf paling sederhana: garis lurus tegak, TANPA titik apapun'),
-  qi('ب',['Alif — garis tegak lurus','Ba — perahu kecil, 1 titik bawah','Ta — perahu, 2 titik atas','Tha — perahu, 3 titik atas'],1,'ب = Ba — bentuk "perahu kecil" dengan 1 titik DI BAWAH'),
-  qi('ت',['Ba — 1 titik bawah','Ta — perahu, 2 titik atas','Tha — perahu, 3 titik atas','Nun — 1 titik atas'],1,'ت = Ta — bentuk perahu sama seperti Ba, tapi 2 titik DI ATAS'),
-  qi('ث',['Ba — 1 titik bawah','Ta — 2 titik atas','Tha — perahu, 3 titik atas','Jim — kait + titik bawah'],2,'ث = Tha — perahu sama lagi, tapi 3 titik DI ATAS — paling banyak titiknya!'),
+  qi('ب',['Alif — garis tegak lurus','Ba — perahu kecil, 1 titik bawah','Ta — perahu, 2 titik atas','Tsa — perahu, 3 titik atas'],1,'ب = Ba — bentuk "perahu kecil" dengan 1 titik DI BAWAH'),
+  qi('ت',['Ba — 1 titik bawah','Ta — perahu, 2 titik atas','Tsa — perahu, 3 titik atas','Nun — 1 titik atas'],1,'ت = Ta — bentuk perahu sama seperti Ba, tapi 2 titik DI ATAS'),
+  qi('ث',['Ba — 1 titik bawah','Ta — 2 titik atas','Tsa — perahu, 3 titik atas','Jim — kait + titik bawah'],2,'ث = Tsa — perahu sama lagi, tapi 3 titik DI ATAS — paling banyak titiknya! (Jangan keliru dengan ط = Tha)'),
   qm('Pasangkan huruf dan jumlah titiknya!',[{ar:'ب',txt:'1 titik — di bawah'},{ar:'ت',txt:'2 titik — di atas'},{ar:'ث',txt:'3 titik — di atas'},{ar:'ا',txt:'Tidak ada titik sama sekali'}],'Bentuk perahu SAMA — titik yang membedakan!'),
   qc('Huruf ب (Ba) punya titik di mana?',['Di atas huruf','Di bawah huruf','Di kanan huruf','Tidak ada titik'],1,'ب = Ba — 1 titik tepat DI BAWAH'),
-  qc('Apa perbedaan ت (Ta) dan ث (Tha)?',['Tidak ada bedanya','Ta punya 2 titik atas · Tha punya 3 titik atas','Ta lebih besar dari Tha','Tha punya titik di bawah'],1,'ت = 2 titik atas · ث = 3 titik atas — bentuk IDENTIK, beda jumlah titik saja!'),
-  qm('Boss! Pasangkan semua!',[{ar:'ا',txt:'Alif'},{ar:'ب',txt:'Ba'},{ar:'ت',txt:'Ta'},{ar:'ث',txt:'Tha'}],'Kenali empat huruf pertama — kuncinya ada pada jumlah titik!'),
+  qc('Apa perbedaan ت (Ta) dan ث (Tsa)?',['Tidak ada bedanya','Ta punya 2 titik atas · Tsa punya 3 titik atas','Ta lebih besar dari Tsa','Tsa punya titik di bawah'],1,'ت = 2 titik atas · ث = 3 titik atas — bentuk IDENTIK, beda jumlah titik saja! (ث = Tsa, bukan Tha)'),
+  qm('Boss! Pasangkan semua!',[{ar:'ا',txt:'Alif'},{ar:'ب',txt:'Ba'},{ar:'ت',txt:'Ta'},{ar:'ث',txt:'Tsa'}],'Kenali empat huruf pertama — kuncinya ada pada jumlah titik!'),
 ]}
 function u1s2(){return[
   qi('ج',['Jim — kait + 1 titik bawah','Ha — kait tanpa titik','Kha — kait + 1 titik atas','Dal — seperti huruf D'],0,'ج = Jim — bentuk kait memanjang dengan 1 titik DI BAWAH cekungannya'),
@@ -1348,14 +1348,14 @@ function u2s1(){return[
   qm('Boss Keluarga س ش ص ض!',[{ar:'س',txt:'Sin'},{ar:'ش',txt:'Syin'},{ar:'ص',txt:'Shad'},{ar:'ض',txt:'Dhad'}],'Empat huruf dalam dua pasang — kamu sudah kenali polanya!'),
 ]}
 function u2s2(){return[
-  qi('ط',['Tha — loop tegak tanpa titik','Dzha — loop tegak + 1 titik','Ain — seperti 3 terbalik','Ghain — seperti Ain + titik'],0,'ط = Tha — seperti lingkaran oval dengan tiang tegak di dalam, TANPA titik'),
-  qi('ظ',['Tha — tanpa titik','Dzha — seperti Tha + 1 titik atas','Ain — bentuk 3 terbalik','Dal — D kecil'],1,'ظ = Dzha — persis sama seperti Tha, tapi ada 1 titik DI ATAS'),
+  qi('ط',['Tha — loop tegak tanpa titik','Dza — loop tegak + 1 titik','Ain — seperti 3 terbalik','Ghain — seperti Ain + titik'],0,'ط = Tha — seperti lingkaran oval dengan tiang tegak di dalam, TANPA titik'),
+  qi('ظ',['Tha — tanpa titik','Dza — seperti Tha + 1 titik atas','Ain — bentuk 3 terbalik','Dal — D kecil'],1,'ظ = Dza — persis sama seperti Tha, tapi ada 1 titik DI ATAS'),
   qi('ع',["Ain — seperti angka 3 terbalik, tanpa titik","Ghain — seperti Ain + 1 titik","Tha — loop tegak","Jim — kait + titik"],0,'ع = Ain — seperti angka 3 yang dibalik, membuka ke kanan, TANPA titik'),
   qi('غ',['Ain — tanpa titik','Ghain — seperti Ain + 1 titik atas','Kha — kait + titik atas','Shad — lingkaran'],1,'غ = Ghain — persis seperti Ain tapi ada 1 titik DI ATAS'),
-  qm('Pasangkan keluarga ط ظ & ع غ!',[{ar:'ط',txt:'Tha — loop tegak, tanpa titik'},{ar:'ظ',txt:'Dzha — loop tegak + 1 titik'},{ar:'ع',txt:'Ain — seperti 3 terbalik, tanpa titik'},{ar:'غ',txt:'Ghain — seperti Ain + 1 titik atas'}],'Pasangan kembar lagi — titik selalu jadi kunci pembeda!'),
-  qc('Dzha (ظ) vs Tha (ط) — bedanya?',['Tidak ada bedanya','Dzha ada 1 titik di atas · Tha tidak ada titik','Tha lebih besar','Dzha titiknya di bawah'],1,'ط = Tha tanpa titik · ظ = Dzha dengan 1 titik di atas'),
+  qm('Pasangkan keluarga ط ظ & ع غ!',[{ar:'ط',txt:'Tha — loop tegak, tanpa titik'},{ar:'ظ',txt:'Dza — loop tegak + 1 titik'},{ar:'ع',txt:'Ain — seperti 3 terbalik, tanpa titik'},{ar:'غ',txt:'Ghain — seperti Ain + 1 titik atas'}],'Pasangan kembar lagi — titik selalu jadi kunci pembeda!'),
+  qc('Dza (ظ) vs Tha (ط) — bedanya?',['Tidak ada bedanya','Dza ada 1 titik di atas · Tha tidak ada titik','Tha lebih besar','Dza titiknya di bawah'],1,'ط = Tha tanpa titik · ظ = Dza dengan 1 titik di atas'),
   qc('Ghain (غ) vs Ain (ع) — bedanya?',['Tidak ada bedanya','Ghain ada 1 titik di atas · Ain tidak ada titik','Ain lebih besar','Ghain lebih kecil'],1,'ع = Ain tanpa titik · غ = Ghain dengan 1 titik di atas'),
-  qm('Boss Keluarga ط ظ ع غ!',[{ar:'ط',txt:'Tha'},{ar:'ظ',txt:'Dzha'},{ar:'ع',txt:'Ain'},{ar:'غ',txt:'Ghain'}],'Empat huruf dalam dua pasang — kamu sudah mahir mengenali pola kembar!'),
+  qm('Boss Keluarga ط ظ ع غ!',[{ar:'ط',txt:'Tha'},{ar:'ظ',txt:'Dza'},{ar:'ع',txt:'Ain'},{ar:'غ',txt:'Ghain'}],'Empat huruf dalam dua pasang — kamu sudah mahir mengenali pola kembar!'),
 ]}
 /* ══ UNIT 4 — HARAKAT PENDALAMAN KELOMPOK HURUF ══ */
 function u4s1(){return[
@@ -1366,7 +1366,7 @@ function u4s1(){return[
   qi('جَ',['Ja (fathah)','Ji (kasrah)','Ju (dammah)','J- mati'],0,'جَ = Ja — Jim + Fathah, garis miring kecil di atas'),
   qi('حِ',['Ha-a (fathah)','Ha-i (kasrah) — garis bawah','Ha-u (dammah)','Ha mati'],1,'حِ = Hi — Ha + Kasrah'),
   qi('خُ',['Kha-a (fathah)','Kha-i (kasrah)','Kha-u (dammah) — waw kecil atas','Kha mati'],2,'خُ = Khu — Kha + Dammah'),
-  qm('Boss Harakat Huruf ا–خ!',[{ar:'اَ',txt:'A (Alif fathah)'},{ar:'بِ',txt:'Bi (Ba kasrah)'},{ar:'تُ',txt:'Tu (Ta dammah)'},{ar:'ثَ',txt:'Tsa (Tha fathah)'}],'Review harakat pada 9 huruf pertama hijaiyah'),
+  qm('Boss Harakat Huruf ا–خ!',[{ar:'اَ',txt:'A (Alif fathah)'},{ar:'بِ',txt:'Bi (Ba kasrah)'},{ar:'تُ',txt:'Tu (Ta dammah)'},{ar:'ثَ',txt:'Tsa-a (Tsa + fathah)'}],'Review harakat pada 9 huruf pertama hijaiyah'),
 ]}
 function u4s2(){return[
   qi('دَ',['Da (fathah)','Di (kasrah)','Du (dammah)','D- mati'],0,'دَ = Da — Dal + Fathah'),
@@ -1380,7 +1380,7 @@ function u4s2(){return[
 ]}
 function u4s3(){return[
   qi('طَ',['Tha-a (fathah)','Tha-i (kasrah)','Tha-u (dammah)','Tha mati'],0,'طَ = Tha — Tha + Fathah, garis miring di atas'),
-  qi('ظِ',['Dzha-a (fathah)','Dzha-i (kasrah)','Dzha-u (dammah)','Dzha mati'],1,'ظِ = Dzhi — Dzha + Kasrah'),
+  qi('ظِ',['Dza-a (fathah)','Dza-i (kasrah)','Dza-u (dammah)','Dza mati'],1,'ظِ = Dzi — Dza + Kasrah'),
   qi('عُ',["Ain-a (fathah)","Ain-i (kasrah)","Ain-u (dammah) — waw kecil di atas","Ain mati"],2,"عُ = 'U — Ain + Dammah"),
   qm('Pasangkan harakat pada huruf ط–ي!',[{ar:'غَ',txt:'Gha (fathah = a)'},{ar:'فِ',txt:'Fi (kasrah = i)'},{ar:'قُ',txt:'Qu (dammah = u)'},{ar:'كَ',txt:'Ka (fathah = a)'}],'Latih harakat pada kelompok huruf terakhir'),
   qi('لِ',['La (fathah)','Li (kasrah) — garis bawah','Lu (dammah)','L- mati'],1,'لِ = Li — Lam + Kasrah'),
@@ -1426,7 +1426,7 @@ const U=[
   {id:2,group:'A',title:'Huruf — Keluarga Bentuk 2',desc:'س ش · ص ض · ط ظ · ع غ · ف ق · ك ل م ن ه و ي — melengkapi 28 huruf',icon:'📘',col:'#2da063',bdr:'#145c35',status:'locked',
    les:[
     {id:'2-1',title:'Keluarga س ش & ص ض',desc:'Sin·Syin = 3 gigi (3 titik=Syin) · Shad·Dhad = lingkaran+ekor (titik=Dhad)',icon:'📖',ex:u2s1()},
-    {id:'2-2',title:'Keluarga ط ظ & ع غ',desc:'Tha·Dzha = loop tegak (titik=Dzha) · Ain·Ghain = angka 3 terbalik (titik=Ghain)',icon:'📖',ex:u2s2()},
+    {id:'2-2',title:'Keluarga ط ظ & ع غ',desc:'Tha·Dza = loop tegak (titik=Dza) · Ain·Ghain = angka 3 terbalik (titik=Ghain)',icon:'📖',ex:u2s2()},
     {id:'2-3',title:'Keluarga ف ق & Huruf ك ل م ن ه و ي',desc:'Fa (1 titik) · Qaf (2 titik) · huruf lainnya punya bentuk unik masing-masing',icon:'📖',ex:h3()},
     {id:'2-4',title:'Grand Boss — 28 Huruf Lengkap',desc:'Identifikasi dan bedakan semua huruf hijaiyah — ujian visual komprehensif!',icon:'🏆',ex:mirip()},
    ]},
@@ -1864,13 +1864,13 @@ function h1(){return[
   qm('Pasangkan huruf dengan namanya!',[{ar:'ا',txt:'Alif'},{ar:'ب',txt:'Ba'},{ar:'ت',txt:'Ta'},{ar:'ث',txt:'Tsa'}],'Empat huruf pertama Hijaiyah'),
   qi('ث',['Ba (ب)','Ta (ت)','Tsa (ث)','Nun (ن)'],2,'Tsa (ث) — 3 titik di atas'),
   qc('Pilih huruf Ha (ح)',['ج','ح','خ','ع'],1,'Ha (ح) — lengkungan tanpa titik',true),
-  qi('د',['Dal (د)','Dzal (ذ)','Ra (ر)','Zal (ز)'],0,'Dal (د) — seperti lengkungan kecil ke kanan, tanpa titik'),
+  qi('د',['Dal (د)','Dzal (ذ)','Ra (ر)','Zai (ز)'],0,'Dal (د) — seperti lengkungan kecil ke kanan, tanpa titik'),
   qm('Pasangkan!',[{ar:'ج',txt:'Jim'},{ar:'ح',txt:'Ha'},{ar:'خ',txt:'Kha'},{ar:'د',txt:'Dal'}],'Huruf Jim, Ha, Kha, Dal'),
 ]}
 function h2(){return[
-  qi('ذ',['Dal (د)','Dzal (ذ)','Ra (ر)','Zal (ز)'],1,'Dzal (ذ) = Dal + 1 titik di atas'),
+  qi('ذ',['Dal (د)','Dzal (ذ)','Ra (ر)','Zai (ز)'],1,'Dzal (ذ) = Dal + 1 titik di atas'),
   qi('ص',['Shad (ص)','Dhad (ض)','Sin (س)','Syin (ش)'],0,'Shad (ص) — oval terbuka ke kanan, tanpa titik'),
-  qm('Pasangkan!',[{ar:'ر',txt:'Ra'},{ar:'ز',txt:'Zal'},{ar:'س',txt:'Sin'},{ar:'ش',txt:'Syin'}],'Empat huruf: Ra Zal Sin Syin'),
+  qm('Pasangkan!',[{ar:'ر',txt:'Ra'},{ar:'ز',txt:'Zai'},{ar:'س',txt:'Sin'},{ar:'ش',txt:'Syin'}],'Empat huruf: Ra Zai Sin Syin'),
   qc('Pilih huruf Tha (ط)',['ض','ط','ظ','ص'],1,'Tha (ط) — seperti cangkir tertutup tanpa titik',true),
   qi('ظ',['Tha (ط)','Dza (ظ)','Shad (ص)','Dhad (ض)'],1,'Dza (ظ) = Tha + 1 titik di atas'),
   qi('ع',['Ain (ع)','Ghain (غ)','Fa (ف)','Qaf (ق)'],0,'Ain (ع) — seperti "c" kecil tanpa titik, bunyi dari tenggorokan'),
@@ -1901,11 +1901,11 @@ function mirip(){return[
   qc('Bedakan: ح (Ha) vs هـ (Ha besar)',['Sama saja','Ha (ح) dari tenggorokan, Ha (هـ) dari pita suara','Ha (هـ) lebih keras','Tidak ada perbedaan'],1,'ح = Ha halqiyah (tenggorokan tengah) | هـ = Ha dari pita suara bagian bawah'),
   qm('Pasangkan huruf mirip dengan perbedaannya!',[{ar:'س vs ش',txt:'Sin tanpa titik / Syin 3 titik'},{ar:'ص vs ض',txt:'Shad tanpa titik / Dhad 1 titik'},{ar:'ط vs ظ',txt:'Tha tanpa titik / Dza 1 titik'},{ar:'ع vs غ',txt:'Ain tanpa titik / Ghain 1 titik'}],'Pasangan huruf mirip bentuk, beda titik'),
   qi('ض',['Shad (ص) — tanpa titik','Dhad (ض) — 1 titik kiri','Dza (ظ) — 1 titik atas','Sin (س) — tanpa titik'],1,'Dhad (ض) — memiliki 1 titik di sisi kiri atas, bunyi lebih tebal'),
-  qc('Huruf ر (Ra) dan ز (Zal) berbeda pada?',['Ukuran','Ada tidaknya titik di atas','Posisi ekor','Bentuk badan'],1,'Zal (ز) = Ra + 1 titik di atas. Tanpa titik = Ra (ر)'),
+  qc('Huruf ر (Ra) dan ز (Zai) berbeda pada?',['Ukuran','Ada tidaknya titik di atas','Posisi ekor','Bentuk badan'],1,'Zai (ز) = Ra + 1 titik di atas. Tanpa titik = Ra (ر)'),
   qc('Manakah yang berbunyi "Nun" dari hidung?',['ن saja','م saja','ن dan م keduanya','ب'],2,'Nun (ن) dan Mim (م) keduanya punya ghunnah (dengung hidung)'),
   qm('Pasangkan huruf dengan ciri khasnya!',[{ar:'ف',txt:'1 titik di atas'},{ar:'ق',txt:'2 titik di atas'},{ar:'ب',txt:'1 titik di bawah'},{ar:'ت',txt:'2 titik di atas, lebih kecil'}],'Bedakan Fa, Qaf, Ba, Ta'),
   qc('Alif (ا) vs Ain (ع) — bedanya?',['Sama dari tenggorokan','Alif hanya tiang tegak lurus, Ain dari tenggorokan','Alif bersuara, Ain tidak','Ain lebih panjang'],1,'Alif (ا) = penopang, tidak selalu bersuara | Ain (ع) = huruf tenggorokan dengan bunyi khas'),
-  ql('Dengarkan — huruf apa?','سِين',['ص','ش','س','ز'],2,'Sin (س) = bunyi desis ringan "S" | Syin (ش) = desis + hembus "Sh" | Shad (ص) = berat dari dalam | Zal (ز) = bunyi "Z"'),
+  ql('Dengarkan — huruf apa?','سِين',['ص','ش','س','ز'],2,'Sin (س) = bunyi desis ringan "S" | Syin (ش) = desis + hembus "Sh" | Shad (ص) = berat dari dalam | Zai (ز) = bunyi "Z"'),
 ]}
 
 /* ══ UNIT 2: TANDA BACA ══ */
